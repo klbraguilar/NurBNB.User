@@ -10,6 +10,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Domain", "Nu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.SharedKernel", "..\..\..\Documents\Postgrado\microservicios\mod 2\ms2023-restaurant-sharedkernel-main\Restaurant.SharedKernel\Restaurant.SharedKernel.csproj", "{BFD258BE-C54C-470A-9BAF-3509F6E1435C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Appplication", "NurBNB.Usuario.Appplication\NurBNB.Usuario.Appplication.csproj", "{AA061745-E9A9-4FAA-807C-349CBE5721E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Infrastructure", "NurBNB.Usuario.Infrastructure\NurBNB.Usuario.Infrastructure.csproj", "{BD662E7A-DAE4-4E19-99E8-16F9303782A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.WebAPI", "NurBNB.Usuario.WebAPI\NurBNB.Usuario.WebAPI.csproj", "{A2D1142D-70B4-4068-99C0-B009BB1D934D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +30,18 @@ Global
 		{BFD258BE-C54C-470A-9BAF-3509F6E1435C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFD258BE-C54C-470A-9BAF-3509F6E1435C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFD258BE-C54C-470A-9BAF-3509F6E1435C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA061745-E9A9-4FAA-807C-349CBE5721E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA061745-E9A9-4FAA-807C-349CBE5721E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA061745-E9A9-4FAA-807C-349CBE5721E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA061745-E9A9-4FAA-807C-349CBE5721E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD662E7A-DAE4-4E19-99E8-16F9303782A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD662E7A-DAE4-4E19-99E8-16F9303782A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD662E7A-DAE4-4E19-99E8-16F9303782A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD662E7A-DAE4-4E19-99E8-16F9303782A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

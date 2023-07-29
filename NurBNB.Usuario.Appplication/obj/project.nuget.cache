@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZeU9XMyXU7/Yj7jBh7htsRCcXFKp7y7+pcr6m5X60UU9mzY13hZ3PL2jd7P8q2CBTDUOVT4hmVzygGwb/BeTLg==",
+  "dgSpecHash": "tilsPuzgoG2iaRY6N9SGwYdXo8wDgM6dB5rprfzK9X8ZGKm2Kqvcem+xnVi2ReqmYWdSGsp/qACm0XmtZN1ABg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\k-a37\\source\\repos\\NurBNB.UsuarioApp\\NurBNB.Usuario\\NurBNB.Usuario.Domain.csproj",
+  "projectFilePath": "C:\\Users\\k-a37\\source\\repos\\NurBNB.UsuarioApp\\NurBNB.Usuario.Appplication\\NurBNB.Usuario.Appplication.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\k-a37\\.nuget\\packages\\mediatr\\12.1.1\\mediatr.12.1.1.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\restaurant.sharedkernel\\1.0.0\\restaurant.sharedkernel.1.0.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",

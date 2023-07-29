@@ -13,10 +13,11 @@ namespace NurBNB.Usuario.Domain.Model.Users
         public string? Email { get; private set; }
         public string? Password { get; private set; }
         public User() { }
-        public User(string username, string email) 
+        public User(string username, string email, string password) 
         {
             Username = username;
             Email = email;
+            Password = password;
         }
 
         public void Edit(string username)
