@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearUsuario;
+using NurBNB.Usuario.Appplication.UseCases.Usuario.Query.ListarUsuario;
 
 namespace NurBNB.Usuario.WebAPI.Controllers
 {
@@ -19,8 +20,18 @@ namespace NurBNB.Usuario.WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateItem([FromBody] CrearUsuarioCommand usuarioCommand)
         {
-            var itemId = await _mediator.Send(usuarioCommand);
-            return Ok(itemId);
+            var userId = await _mediator.Send(usuarioCommand);
+            return Ok(userId);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> searchUsers(string searchTerm = "")
+        {
+            var users = await _mediator.Send(new GetUserListQuery()
+            { 
+                SearchTerm= searchTerm
+            });
+            return Ok(users);
         }
     }
 }

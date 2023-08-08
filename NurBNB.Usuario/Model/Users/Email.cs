@@ -12,7 +12,7 @@ namespace NurBNB.Usuario.Domain.Model.Users
     {
         public string Value { get; init; }
 
-        internal Email(string value)
+        public Email(string value)
         {
             CheckRule(new StringNotNullOrEmptyRule(value));
             Value = value;

@@ -16,5 +16,10 @@ namespace NurBNB.Usuario.Domain.Model.Users
         {
             _user = new User();  
         }
+
+        public Staff(User user)
+        {
+            _user = user;
+        }
     }
 }

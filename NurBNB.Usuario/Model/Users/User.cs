@@ -15,6 +15,7 @@ namespace NurBNB.Usuario.Domain.Model.Users
         public User() { }
         public User(string username, string email, string password) 
         {
+            Id = Guid.NewGuid();
             Username = username;
             Email = email;
             Password = password;
