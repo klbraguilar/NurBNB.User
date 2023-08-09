@@ -14,3 +14,9 @@ En cuanto al Check Out el guest podrá agregar la hora de salida, comentario sob
 - Edición de usuarios
 - Registro de Check In
 - Registro de Check out y calificación
+
+
+**Arquitectura Basada en principios de Clean Architecture**
+
+![CleanArchitecture](https://github.com/klbraguilar/NurBNB.User/assets/19180334/43d8d7fa-0f02-48e2-80f8-b89936ad1e07)
+
