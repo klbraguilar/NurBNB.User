@@ -7,7 +7,7 @@ using Restaurant.SharedKernel.Core;
 
 namespace NurBNB.Usuario.Test.Application.UseCases.Usuario.Command
 {
-    public class CrearUsuarioCommand_test : IClassFixture<UsuarioFactory>
+    public class CrearUsuarioCommand_test 
     {
         Mock<IUsuarioRepository> _usuarioRepository;
         Mock<IUsuarioFactory> _usuarioFactory;
@@ -36,7 +36,9 @@ namespace NurBNB.Usuario.Test.Application.UseCases.Usuario.Command
                 ) ;
             var tcs = new CancellationTokenSource(1000);
             CrearUsuarioCommand usuarioCommand = new CrearUsuarioCommand();
-            crearUsuarioHandler.Handle(usuarioCommand, tcs.Token);
+            var actionResult = crearUsuarioHandler.Handle(usuarioCommand, tcs.Token);
+            Assert.NotNull(actionResult);
+            Assert.True(actionResult.IsCompletedSuccessfully);
         }
     }
 }
