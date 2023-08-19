@@ -26,9 +26,6 @@ namespace NurBNB.Usuario.Infrastructure.EF.Config
             builder.Property(x => x.Name)
                 .HasColumnName("lastName");
 
-            builder.Property(x => x.UserID)
-                .HasColumnName("userId");
-
             builder.Ignore("_domainEvents");
             builder.Ignore(x => x.DomainEvents);
         }

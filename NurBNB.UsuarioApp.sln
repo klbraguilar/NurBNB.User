@@ -3,18 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33122.133
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Domain", "NurBNB.Usuario\NurBNB.Usuario.Domain.csproj", "{1CDACB85-2FA8-4ECD-A795-AAD00FB330BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.Domain", "NurBNB.Usuario\NurBNB.Usuario.Domain.csproj", "{1CDACB85-2FA8-4ECD-A795-AAD00FB330BA}"
 	ProjectSection(ProjectDependencies) = postProject
 		{BFD258BE-C54C-470A-9BAF-3509F6E1435C} = {BFD258BE-C54C-470A-9BAF-3509F6E1435C}
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Restaurant.SharedKernel", "..\..\..\Documents\Postgrado\microservicios\mod 2\ms2023-restaurant-sharedkernel-main\Restaurant.SharedKernel\Restaurant.SharedKernel.csproj", "{BFD258BE-C54C-470A-9BAF-3509F6E1435C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Appplication", "NurBNB.Usuario.Appplication\NurBNB.Usuario.Appplication.csproj", "{AA061745-E9A9-4FAA-807C-349CBE5721E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.Appplication", "NurBNB.Usuario.Appplication\NurBNB.Usuario.Appplication.csproj", "{AA061745-E9A9-4FAA-807C-349CBE5721E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Infrastructure", "NurBNB.Usuario.Infrastructure\NurBNB.Usuario.Infrastructure.csproj", "{BD662E7A-DAE4-4E19-99E8-16F9303782A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.Infrastructure", "NurBNB.Usuario.Infrastructure\NurBNB.Usuario.Infrastructure.csproj", "{BD662E7A-DAE4-4E19-99E8-16F9303782A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.WebAPI", "NurBNB.Usuario.WebAPI\NurBNB.Usuario.WebAPI.csproj", "{A2D1142D-70B4-4068-99C0-B009BB1D934D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.WebAPI", "NurBNB.Usuario.WebAPI\NurBNB.Usuario.WebAPI.csproj", "{A2D1142D-70B4-4068-99C0-B009BB1D934D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NurBNB.Usuario.Test", "NurBNB.Usuario.Test\NurBNB.Usuario.Test.csproj", "{57034402-12B1-40A0-AE73-F422D4A15233}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +44,10 @@ Global
 		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2D1142D-70B4-4068-99C0-B009BB1D934D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57034402-12B1-40A0-AE73-F422D4A15233}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57034402-12B1-40A0-AE73-F422D4A15233}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57034402-12B1-40A0-AE73-F422D4A15233}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57034402-12B1-40A0-AE73-F422D4A15233}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

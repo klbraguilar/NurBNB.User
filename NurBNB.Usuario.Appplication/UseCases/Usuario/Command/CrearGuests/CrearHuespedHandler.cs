@@ -14,24 +14,25 @@ namespace NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearGuests
 {
     internal class CrearHuespedHandler : IRequestHandler<CrearHuespedCommand, Guid>
     {
-        private IUsuarioRepository _usuarioRepository;
-        private IUsuarioFactory _usuarioFactory;
+        private IHuespedRepository _huespedRepository;
+        private IGuestsFactory _huespedFactory;
         private readonly IUnitOfWork _unitOfWork;
 
-        public CrearHuespedHandler(IUsuarioRepository usuarioRepository,
-            IUsuarioFactory usuarioFactory, IUnitOfWork unitOfWork)
+        public CrearHuespedHandler(IHuespedRepository usuarioRepository,
+            IGuestsFactory usuarioFactory, IUnitOfWork unitOfWork)
         {
-            _usuarioRepository = usuarioRepository;
-            _usuarioFactory = usuarioFactory;
+            _huespedRepository = usuarioRepository;
+            _huespedFactory = usuarioFactory;
             _unitOfWork = unitOfWork;
         }
 
         public async Task<Guid> Handle(CrearHuespedCommand request, CancellationToken cancellationToken)
         {
-            //User usuarioCreado = _usuarioFactory.Crear(request.UserName, request.Password, request.Email);
-            //await _usuarioRepository.CreateAsync(usuarioCreado);
-            //await _unitOfWork.Commit();
-            //return usuarioCreado.Id;
+
+            Guest huespedCreado = _huespedFactory.Crear(request.Name, request.LastName, request.PhoneNumber, request.userId);
+            await _huespedRepository.CreateAsync(huespedCreado);
+            await _unitOfWork.Commit();
+            return huespedCreado.Id;
         }
     }
 }

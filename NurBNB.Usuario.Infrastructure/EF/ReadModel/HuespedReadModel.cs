@@ -25,9 +25,13 @@ namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
         [Required]
         public string LastName { get; set; }
 
-        [ForeignKey("User")]
-        [Column("userId")]
+        [Column("phoneNumber")]
+        [StringLength(250)]
         [Required]
-        public Guid UserId { get; set; }
+        public string PhoneNumber { get; set; }
+
+        [Column("usuarioId")]
+        public Guid UsuarioId { get; set; }
+        public UsuarioReadModel Usuario { get; set; }
     }
 }

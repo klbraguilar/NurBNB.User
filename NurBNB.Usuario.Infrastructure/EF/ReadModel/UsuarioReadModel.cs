@@ -12,7 +12,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
     internal class UsuarioReadModel
     {
         [Key]
-        [Column("userId")]
+        [Column("usuarioId")]
         public Guid Id { get; set; }
 
         [Column("userName")]

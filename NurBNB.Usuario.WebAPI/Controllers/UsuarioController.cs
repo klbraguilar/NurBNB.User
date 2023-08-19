@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearGuests;
 using NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearUsuario;
 using NurBNB.Usuario.Appplication.UseCases.Usuario.Query.ListarUsuario;
 
@@ -18,8 +19,8 @@ namespace NurBNB.Usuario.WebAPI.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateItem([FromBody] CrearUsuarioCommand usuarioCommand)
-        {
+        public async Task<IActionResult> CreateUser([FromBody] CrearUsuarioCommand usuarioCommand)
+        { 
             var userId = await _mediator.Send(usuarioCommand);
             return Ok(userId);
         }
