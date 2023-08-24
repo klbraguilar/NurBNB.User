@@ -9,9 +9,9 @@ namespace NurBNB.Usuario.Domain.Model.Users
 {
     public class User : AggregateRoot
     {
-        public string? Username { get; private set; }
-        public Email? Email { get; private set; }
-        public string? Password { get; private set; }
+        public string Username { get; private set; }
+        public Email Email { get; private set; }
+        public string Password { get; private set; }
         public User() { }
         public User(string username, string email, string password) 
         {
