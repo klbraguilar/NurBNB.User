@@ -27,7 +27,7 @@ namespace NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearUsuario
 
         public async Task<Guid> Handle(CrearUsuarioCommand request, CancellationToken cancellationToken)
         {
-            User usuarioCreado = _usuarioFactory.Crear(request.UserName, request.Password, request.Email);
+            var usuarioCreado = _usuarioFactory.Crear(request.UserName, request.Email, request.Password);
             await _usuarioRepository.CreateAsync(usuarioCreado);
             await _unitOfWork.Commit();
             return usuarioCreado.Id;

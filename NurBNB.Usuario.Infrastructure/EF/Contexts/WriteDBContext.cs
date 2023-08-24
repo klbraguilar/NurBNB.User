@@ -27,7 +27,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.Contexts
             var usuarioConfig = new UsuarioConfig();
             modelBuilder.ApplyConfiguration<User>(usuarioConfig);
 
-            //modelBuilder.Ignore<DomainEvent>();
+            modelBuilder.Ignore<DomainEvent>();
             //modelBuilder.Ignore<TransaccionConfirmada>();
         }
     }

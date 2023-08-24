@@ -11,7 +11,7 @@ namespace NurBNB.Usuario.Domain.Factories
     {
         public Guest Crear(string name, string lastName, string phoneNumber, Guid userId)
         {
-            return new Guest(name, lastName, phoneNumber, userId);
+            return new Guest(name, lastName, phoneNumber);
         }
     }
 }

@@ -12,17 +12,17 @@ namespace NurBNB.Usuario.Domain.Model.Users
         public string Name { get; private set; }
         public string LastName { get; private set; }
         public string PhoneNumber { get; private set; }
-        public Guid UserID { get; private set; }
+        //public Guid UserID { get; private set; }
 
         private User _user;
 
-        public Guest(string name, string lastName, string phoneNumber, Guid userId)
+        public Guest(string name, string lastName, string phoneNumber)
         {
             Id = Guid.NewGuid();
             Name = name;
             LastName = lastName;
             PhoneNumber = phoneNumber;
-            UserID = userId;
+            //UserID = userId;
         }
     }
 }
