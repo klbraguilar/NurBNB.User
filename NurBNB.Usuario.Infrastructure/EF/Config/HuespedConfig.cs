@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Config
 {
-    internal class HuespedConfig : IEntityTypeConfiguration<Guest>
+    public class HuespedConfig : IEntityTypeConfiguration<Guest>
     {
         public void Configure(EntityTypeBuilder<Guest> builder)
         {
@@ -23,7 +23,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.Config
             builder.Property(x => x.Name)
                 .HasColumnName("name");
 
-            builder.Property(x => x.Name)
+            builder.Property(x => x.LastName)
                 .HasColumnName("lastName");
 
             builder.Ignore("_domainEvents");

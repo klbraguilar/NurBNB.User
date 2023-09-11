@@ -39,6 +39,7 @@ namespace NurBNB.Usuario.Infrastructure
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IHuespedRepository, HuespedRepository>();
+            services.AddScoped<IStaffRepository, StaffRepository>();
 
             using var scope = services.BuildServiceProvider().CreateScope();
             if (!isDevelopment)

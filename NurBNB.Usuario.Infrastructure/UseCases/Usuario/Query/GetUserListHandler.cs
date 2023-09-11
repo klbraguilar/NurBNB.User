@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.UseCases.Usuario.Query
 {
-    internal class GetUserListHandler : IRequestHandler<GetUserListQuery, ICollection<UserDto>>
+    public class GetUserListHandler : IRequestHandler<GetUserListQuery, ICollection<UserDto>>
     {
         private readonly DbSet<UsuarioReadModel> _users;
 

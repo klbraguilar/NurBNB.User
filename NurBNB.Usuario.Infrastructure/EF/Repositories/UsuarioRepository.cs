@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Repositories
 {
-    internal class UsuarioRepository : IUsuarioRepository
+    public class UsuarioRepository : IUsuarioRepository
     {
         private readonly WriteDBContext _dbContext;
 

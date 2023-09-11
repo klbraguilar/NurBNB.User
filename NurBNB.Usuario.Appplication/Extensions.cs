@@ -16,6 +16,7 @@ namespace NurBNB.Usuario.Appplication
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             services.AddSingleton<IUsuarioFactory, UsuarioFactory>();
             services.AddSingleton<IGuestsFactory, GuestsFactoty>();
+            services.AddSingleton<IStaffFactory, StaffFactory>();
             return services;
         }
     }

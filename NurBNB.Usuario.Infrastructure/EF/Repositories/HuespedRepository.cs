@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Repositories
 {
-    internal class HuespedRepository : IHuespedRepository
+    public class HuespedRepository : IHuespedRepository
     {
         private readonly WriteDBContext _dbContext;
 
@@ -23,9 +23,9 @@ namespace NurBNB.Usuario.Infrastructure.EF.Repositories
             await _dbContext.Guest.AddAsync(guest);
         }
 
-        public Task<Guest?> FindByIdAsync(Guid id)
+        public async Task<Guest?> FindByIdAsync(Guid id)
         {
-            throw new NotImplementedException();
+            return await _dbContext.Guest.FindAsync(id);
         }
 
         public Task UpdateAsync(Guest guest)

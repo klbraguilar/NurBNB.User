@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearGuests
 {
-    internal class CrearHuespedHandler : IRequestHandler<CrearHuespedCommand, Guid>
+    public class CrearHuespedHandler : IRequestHandler<CrearHuespedCommand, Guid>
     {
         private IHuespedRepository _huespedRepository;
         private IGuestsFactory _huespedFactory;
@@ -29,7 +29,7 @@ namespace NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearGuests
         public async Task<Guid> Handle(CrearHuespedCommand request, CancellationToken cancellationToken)
         {
 
-            Guest huespedCreado = _huespedFactory.Crear(request.Name, request.LastName, request.PhoneNumber, request.userId);
+            Guest huespedCreado = _huespedFactory.Crear(request.Name, request.LastName, request.PhoneNumber, request.usuarioId);
             await _huespedRepository.CreateAsync(huespedCreado);
             await _unitOfWork.Commit();
             return huespedCreado.Id;

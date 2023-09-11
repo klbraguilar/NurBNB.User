@@ -10,10 +10,12 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Contexts
 {
-    internal class WriteDBContext : DbContext
+    public class WriteDBContext : DbContext
     {
         public virtual DbSet<User> User { set; get; }
         public virtual DbSet<Guest> Guest { set; get; }
+
+        public virtual DbSet<Staff> Staff { set; get; }
 
         public WriteDBContext(DbContextOptions<WriteDBContext> options) : base(options)
         {
@@ -26,6 +28,12 @@ namespace NurBNB.Usuario.Infrastructure.EF.Contexts
 
             var usuarioConfig = new UsuarioConfig();
             modelBuilder.ApplyConfiguration<User>(usuarioConfig);
+
+            var huespedConfig = new HuespedConfig();
+            modelBuilder.ApplyConfiguration<Guest>(huespedConfig);
+
+            var staffConfig = new StaffConfig();
+            modelBuilder.ApplyConfiguration<Staff>(staffConfig);
 
             modelBuilder.Ignore<DomainEvent>();
             //modelBuilder.Ignore<TransaccionConfirmada>();

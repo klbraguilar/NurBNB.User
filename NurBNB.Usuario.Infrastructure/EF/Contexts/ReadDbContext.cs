@@ -10,12 +10,18 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Contexts;
 
-internal class ReadDbContext : DbContext
+public class ReadDbContext : DbContext
 {
     public virtual DbSet<UsuarioReadModel> Usuario { set; get; }
     public virtual DbSet<HuespedReadModel> Huesped { set; get; }
+    public virtual DbSet<StaffReadModel> Staff { set; get; }
     public ReadDbContext(DbContextOptions<ReadDbContext> options) : base(options)
     {
+    }
+
+    public ReadDbContext()
+    {
+
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

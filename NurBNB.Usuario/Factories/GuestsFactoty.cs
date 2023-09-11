@@ -9,9 +9,9 @@ namespace NurBNB.Usuario.Domain.Factories
 {
     public class GuestsFactoty : IGuestsFactory
     {
-        public Guest Crear(string name, string lastName, string phoneNumber, Guid userId)
+        public Guest Crear(string name, string lastName, string phoneNumber, Guid usuarioId)
         {
-            return new Guest(name, lastName, phoneNumber);
+            return new Guest(name, lastName, phoneNumber, usuarioId);
         }
     }
 }

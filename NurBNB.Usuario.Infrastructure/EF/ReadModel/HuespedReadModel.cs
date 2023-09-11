@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
 {
     [Table("huesped")]
-    internal class HuespedReadModel
+    public class HuespedReadModel
     {
         [Key]
         [Column("guestId")]

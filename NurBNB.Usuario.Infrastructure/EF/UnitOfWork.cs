@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF
 {
-    internal class UnitOfWork : IUnitOfWork
+    public class UnitOfWork : IUnitOfWork
     {
         private readonly WriteDBContext _writeDBContext;
 

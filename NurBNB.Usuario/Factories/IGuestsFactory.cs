@@ -9,6 +9,6 @@ namespace NurBNB.Usuario.Domain.Factories
 {
     public interface IGuestsFactory
     {
-        Guest Crear(string name, string lastName, string phoneNumber, Guid userID);
+        Guest Crear(string name, string lastName, string phoneNumber, Guid usuarioId);
     }
 }

@@ -58,6 +58,42 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
                     b.ToTable("huesped");
                 });
 
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.StaffReadModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("staffId");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("lastName");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("name");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("phoneNumber");
+
+                    b.Property<Guid>("UsuarioId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("usuarioId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("staff");
+                });
+
             modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.UsuarioReadModel", b =>
                 {
                     b.Property<Guid>("Id")
@@ -89,6 +125,17 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.HuespedReadModel", b =>
+                {
+                    b.HasOne("NurBNB.Usuario.Infrastructure.EF.ReadModel.UsuarioReadModel", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.StaffReadModel", b =>
                 {
                     b.HasOne("NurBNB.Usuario.Infrastructure.EF.ReadModel.UsuarioReadModel", "Usuario")
                         .WithMany()

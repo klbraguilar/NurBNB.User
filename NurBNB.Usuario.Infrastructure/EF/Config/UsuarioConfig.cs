@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace NurBNB.Usuario.Infrastructure.EF.Config
 {
-    internal class UsuarioConfig : IEntityTypeConfiguration<User>
+    public class UsuarioConfig : IEntityTypeConfiguration<User>
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
