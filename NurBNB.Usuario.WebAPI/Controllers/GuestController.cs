@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearGuests;
 using NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearUsuario;
+using NurBNB.Usuario.Appplication.UseCases.Usuario.Query.ListarUsuario;
 
 namespace NurBNB.Usuario.WebAPI.Controllers
 {
@@ -28,6 +29,16 @@ namespace NurBNB.Usuario.WebAPI.Controllers
             huespedCommand.usuarioId = userId;
             var guestID = await _mediator.Send(huespedCommand);
             return Ok(guestID);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> searchGuests(string searchTerm = "")
+        {
+            var guests = await _mediator.Send(new GetGuestListQuery()
+            {
+                SearchTerm = searchTerm
+            });
+            return Ok(guests);
         }
     }
 }

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<coverage line-rate="0.9068" branch-rate="0.5625" version="1.9" timestamp="1694399725" lines-covered="253" lines-valid="279" branches-covered="9" branches-valid="16">
+<coverage line-rate="0.9035" branch-rate="0.5625" version="1.9" timestamp="1694408946" lines-covered="253" lines-valid="280" branches-covered="9" branches-valid="16">
   <sources>
     <source>C:\Users\k-a37\</source>
   </sources>
   <packages>
-    <package name="NurBNB.Usuario.Appplication" line-rate="0.971" branch-rate="1" complexity="30">
+    <package name="NurBNB.Usuario.Appplication" line-rate="0.9571" branch-rate="1" complexity="31">
       <classes>
         <class name="NurBNB.Usuario.Appplication.Extensions" filename="source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\Extensions.cs" line-rate="1" branch-rate="1" complexity="1">
           <methods>
@@ -28,6 +28,18 @@
             <line number="19" hits="1" branch="False" />
             <line number="20" hits="1" branch="False" />
             <line number="21" hits="1" branch="False" />
+          </lines>
+        </class>
+        <class name="NurBNB.Usuario.Appplication.UseCases.Usuario.Query.ListarUsuario.GetGuestListQuery" filename="source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\UseCases\Usuario\Query\ListarUsuario\GetGuestListQuery.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="get_SearchTerm" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="False" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="False" />
           </lines>
         </class>
         <class name="NurBNB.Usuario.Appplication.UseCases.Usuario.Query.ListarUsuario.GetUserListQuery" filename="source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\UseCases\Usuario\Query\ListarUsuario\GetUserListQuery.cs" line-rate="1" branch-rate="1" complexity="1">
