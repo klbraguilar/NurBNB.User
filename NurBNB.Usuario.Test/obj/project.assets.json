@@ -777,6 +777,15 @@
           }
         }
       },
+      "Restaurant.SharedKernel/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Restaurant.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Restaurant.SharedKernel.dll": {}
+        }
+      },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
         "type": "package",
         "runtimeTargets": {
@@ -2246,16 +2255,6 @@
         "runtime": {
           "bin/placeholder/NurBNB.Usuario.Domain.dll": {}
         }
-      },
-      "Restaurant.SharedKernel/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "compile": {
-          "bin/placeholder/Restaurant.SharedKernel.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Restaurant.SharedKernel.dll": {}
-        }
       }
     }
   },
@@ -3463,6 +3462,18 @@
         "lib/netstandard2.0/NuGet.Frameworks.xml",
         "nuget.frameworks.5.11.0.nupkg.sha512",
         "nuget.frameworks.nuspec"
+      ]
+    },
+    "Restaurant.SharedKernel/1.0.0": {
+      "sha512": "t+HI/XqmZrIUykDb8Z+IG9KNORboElbw1coo//w5xSCIhLWkYNlQMCRuKCAmfMt1e1PIMmGSWtXWnML5TexmtQ==",
+      "type": "package",
+      "path": "restaurant.sharedkernel/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Restaurant.SharedKernel.dll",
+        "restaurant.sharedkernel.1.0.0.nupkg.sha512",
+        "restaurant.sharedkernel.nuspec"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -7088,11 +7099,6 @@
       "type": "project",
       "path": "../NurBNB.Usuario/NurBNB.Usuario.Domain.csproj",
       "msbuildProject": "../NurBNB.Usuario/NurBNB.Usuario.Domain.csproj"
-    },
-    "Restaurant.SharedKernel/1.0.0": {
-      "type": "project",
-      "path": "../../../../Documents/Postgrado/microservicios/mod 2/ms2023-restaurant-sharedkernel-main/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj",
-      "msbuildProject": "../../../../Documents/Postgrado/microservicios/mod 2/ms2023-restaurant-sharedkernel-main/Restaurant.SharedKernel/Restaurant.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {

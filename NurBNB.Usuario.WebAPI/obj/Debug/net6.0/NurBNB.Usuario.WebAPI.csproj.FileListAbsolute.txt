@@ -25,6 +25,7 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\ne
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Restaurant.SharedKernel.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -50,11 +51,9 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\ne
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Appplication.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Domain.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Infrastructure.dll
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Restaurant.SharedKernel.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Infrastructure.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Appplication.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NurBNB.Usuario.Domain.pdb
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Restaurant.SharedKernel.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.csproj.AssemblyReference.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.AssemblyInfoInputs.cache

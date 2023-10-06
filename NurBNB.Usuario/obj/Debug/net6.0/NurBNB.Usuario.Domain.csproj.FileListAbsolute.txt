@@ -1,14 +1,11 @@
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\bin\Debug\net6.0\NurBNB.Usuario.Domain.deps.json
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\bin\Debug\net6.0\NurBNB.Usuario.Domain.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\bin\Debug\net6.0\NurBNB.Usuario.Domain.pdb
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\bin\Debug\net6.0\Restaurant.SharedKernel.dll
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\bin\Debug\net6.0\Restaurant.SharedKernel.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.csproj.AssemblyReference.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.AssemblyInfoInputs.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.AssemblyInfo.cs
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.csproj.CoreCompileInputs.cache
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.csproj.CopyComplete
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\refint\NurBNB.Usuario.Domain.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario\obj\Debug\net6.0\NurBNB.Usuario.Domain.pdb

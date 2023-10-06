@@ -1,6 +1,5 @@
 ﻿
 using NurBNB.Usuario.Domain.Model.Users;
-using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -12,9 +12,9 @@ namespace NurBNB.Usuario.Infrastructure.EF.Contexts;
 
 public class ReadDbContext : DbContext
 {
-    public virtual DbSet<UsuarioReadModel> Usuario { set; get; }
-    public virtual DbSet<HuespedReadModel> Huesped { set; get; }
-    public virtual DbSet<StaffReadModel> Staff { set; get; }
+    public virtual DbSet<UsuarioReadModel>? Usuario { set; get; }
+    public virtual DbSet<HuespedReadModel>? Huesped { set; get; }
+    public virtual DbSet<StaffReadModel>? Staff { set; get; }
     public ReadDbContext(DbContextOptions<ReadDbContext> options) : base(options)
     {
     }

@@ -13,10 +13,7 @@
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.1.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Documents\Postgrado\microservicios\mod 2\ms2023-restaurant-sharedkernel-main\Restaurant.SharedKernel\Restaurant.SharedKernel.csproj" />
+    <PackageReference Include="Restaurant.SharedKernel" Version="1.0.0" />
   </ItemGroup>
 
 </Project>

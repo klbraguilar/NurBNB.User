@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6dla1xE13Y1EXPBPA+96q2AbRVYLT2lpV1Avt3EdMNDILQOPll/jbVI+srEva07J2D1LnxQno2Fdfqn+uMrhhQ==",
+  "dgSpecHash": "9CYYsJVf2L65W/P9yhsDIBtwz4zl1HlxLmX6emzYHlyZYYdjMZrXSGpT8oRhRs/lnH+tq3ZjJqHzg94wqWOYVg==",
   "success": true,
   "projectFilePath": "C:\\Users\\k-a37\\source\\repos\\NurBNB.UsuarioApp\\NurBNB.Usuario.WebAPI\\NurBNB.Usuario.WebAPI.csproj",
   "expectedPackageFiles": [
@@ -37,6 +37,7 @@
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\k-a37\\.nuget\\packages\\restaurant.sharedkernel\\1.0.0\\restaurant.sharedkernel.1.0.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
@@ -55,7 +56,6 @@
     "C:\\Users\\k-a37\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
-    "C:\\Users\\k-a37\\.nuget\\packages\\restaurant.sharedkernel\\1.0.0\\restaurant.sharedkernel.1.0.0.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.16\\microsoft.windowsdesktop.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.16\\microsoft.netcore.app.ref.6.0.16.nupkg.sha512",
     "C:\\Users\\k-a37\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.16\\microsoft.aspnetcore.app.ref.6.0.16.nupkg.sha512",
