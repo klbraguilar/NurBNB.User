@@ -11,6 +11,7 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
     public class CheckOut : Entity
     {
         public Guid GuestId { get; private set; }
+        public Guid ReservaId { get; private set; }
         public string ComentarioHuesped { get; private set; }
         public DateTime FechaSalida { get; private set; }
         public Calificacion Calificacion { get; private set; }

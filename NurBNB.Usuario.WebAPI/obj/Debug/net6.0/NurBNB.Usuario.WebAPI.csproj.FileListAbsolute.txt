@@ -75,3 +75,16 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\ne
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.genruntimeconfig.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\ref\NurBNB.Usuario.WebAPI.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\MassTransit.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\MassTransit.Abstractions.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\MassTransit.RabbitMqTransport.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\RabbitMQ.Client.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Text.Json.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Threading.Channels.dll

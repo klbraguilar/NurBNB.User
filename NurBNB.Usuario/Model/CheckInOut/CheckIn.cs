@@ -10,8 +10,10 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
     public class CheckIn : Entity
     {
         public Guid GuestId { get; private set; }
+        public Guid ReservaId { get; private set; }
         public string Contacto{ get; private set; }
         public DateTime FechaLlegada { get; private set; }
+
         public CheckIn(Guid guestId, string contacto)
         {
             Id = Guid.NewGuid();

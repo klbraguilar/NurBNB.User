@@ -1,11 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using MassTransit;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NurBNB.Usuario.Appplication;
+using NurBNB.Usuario.Appplication.Services;
 using NurBNB.Usuario.Domain.Repositories;
 using NurBNB.Usuario.Infrastructure.EF;
 using NurBNB.Usuario.Infrastructure.EF.Contexts;
 using NurBNB.Usuario.Infrastructure.EF.Repositories;
+using NurBNB.Usuario.Infrastructure.MassTransit;
 using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
@@ -47,6 +50,29 @@ namespace NurBNB.Usuario.Infrastructure
                 var context = scope.ServiceProvider.GetRequiredService<ReadDbContext>();
                 context.Database.Migrate();
             }
+        }
+
+        private static IServiceCollection AddMassTransitWithRabbitMQ(IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddScoped<IBusService, MassTransitBusService>();
+            var serviceName = configuration.GetValue<string>("ServiceName");
+            var rabbitMQSettings = configuration.GetSection(nameof(RabbitMQSettings)).Get<RabbitMQSettings>();
+
+            services.AddMassTransit(configure =>
+            {
+
+                configure.UsingRabbitMq((context, configurator) =>
+                {
+
+                    configurator.Host(rabbitMQSettings.Host);
+                    configurator.ConfigureEndpoints(context, new KebabCaseEndpointNameFormatter(serviceName, false));
+                    configurator.UseMessageRetry(retryConfigurator =>
+                    {
+                        retryConfigurator.Interval(3, TimeSpan.FromSeconds(5));
+                    });
+                });
+            });
+            return services;
         }
     }
 }

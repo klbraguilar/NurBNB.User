@@ -17,10 +17,80 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0-preview.6.23329.4")
+                .HasAnnotation("ProductVersion", "6.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
-            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
+
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.CheckInReadModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("inId");
+
+                    b.Property<string>("Contacto")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("contacto");
+
+                    b.Property<DateTime>("FechaLlegada")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("fechaLlegada");
+
+                    b.Property<Guid>("GuestId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("guestId");
+
+                    b.Property<Guid>("ReservaId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("reservaId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GuestId");
+
+                    b.ToTable("checkin");
+                });
+
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.CheckOutReadModel", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("outId");
+
+                    b.Property<string>("Calificacion")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("calificacion");
+
+                    b.Property<string>("ComentarioHuesped")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)")
+                        .HasColumnName("comentario");
+
+                    b.Property<DateTime>("FechaSalida")
+                        .HasColumnType("datetime2")
+                        .HasColumnName("fechaSalida");
+
+                    b.Property<Guid>("GuestId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("guestId");
+
+                    b.Property<Guid>("ReservaId")
+                        .HasColumnType("uniqueidentifier")
+                        .HasColumnName("reservaId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("GuestId");
+
+                    b.ToTable("checkout");
+                });
 
             modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.HuespedReadModel", b =>
                 {
@@ -122,6 +192,28 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("usuario");
+                });
+
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.CheckInReadModel", b =>
+                {
+                    b.HasOne("NurBNB.Usuario.Infrastructure.EF.ReadModel.HuespedReadModel", "Guest")
+                        .WithMany()
+                        .HasForeignKey("GuestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Guest");
+                });
+
+            modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.CheckOutReadModel", b =>
+                {
+                    b.HasOne("NurBNB.Usuario.Infrastructure.EF.ReadModel.HuespedReadModel", "Guest")
+                        .WithMany()
+                        .HasForeignKey("GuestId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Guest");
                 });
 
             modelBuilder.Entity("NurBNB.Usuario.Infrastructure.EF.ReadModel.HuespedReadModel", b =>
