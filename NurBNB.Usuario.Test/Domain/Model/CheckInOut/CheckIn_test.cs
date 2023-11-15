@@ -15,9 +15,10 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             // Arrange
             var guestId = Guid.NewGuid();
             var contacto = "John Doe";
+            var reservaId = Guid.NewGuid();
 
             // Act
-            var checkIn = new CheckIn(guestId, contacto);
+            var checkIn = new CheckIn(guestId, reservaId, contacto);
 
             // Assert
             Assert.Equal(guestId, checkIn.GuestId);
@@ -31,9 +32,10 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             // Arrange
             var guestId = Guid.NewGuid();
             var contacto = "John Doe";
+            var reservaId = Guid.NewGuid();
 
             // Act
-            var checkIn = new CheckIn(guestId, contacto);
+            var checkIn = new CheckIn(guestId, reservaId, contacto);
 
             // Assert
             Assert.NotEqual(Guid.Empty, checkIn.Id);
@@ -44,10 +46,10 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             // Arrange
             Guid guestId = Guid.NewGuid();
             string contacto = "Contacto válido";
-
+            var reservaId = Guid.NewGuid();
             // Act
-            var checkIn1 = new CheckIn(guestId, contacto);
-            var checkIn2 = new CheckIn(guestId, contacto);
+            var checkIn1 = new CheckIn(guestId, reservaId, contacto);
+            var checkIn2 = new CheckIn(guestId, reservaId, contacto);
 
             // Assert
             Assert.Equal(checkIn1, checkIn2);
@@ -59,10 +61,11 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
         {
             // Arrange
             Guid guestId = Guid.NewGuid();
+            var reservaId = Guid.NewGuid();
             string contacto = "Contacto válido";
 
             // Act
-            var checkIn = new CheckIn(guestId, contacto);
+            var checkIn = new CheckIn(guestId, reservaId, contacto);
 
             // Assert
             Assert.True(checkIn.FechaLlegada <= DateTime.Now);

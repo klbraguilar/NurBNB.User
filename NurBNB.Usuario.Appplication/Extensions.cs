@@ -17,6 +17,8 @@ namespace NurBNB.Usuario.Appplication
             services.AddSingleton<IUsuarioFactory, UsuarioFactory>();
             services.AddSingleton<IGuestsFactory, GuestsFactoty>();
             services.AddSingleton<IStaffFactory, StaffFactory>();
+            services.AddSingleton<ICheckInFactory, CheckInFactory>();
+            services.AddSingleton<ICheckOutFactory, CheckOutFactory>();
             return services;
         }
     }

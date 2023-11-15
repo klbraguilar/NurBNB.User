@@ -17,8 +17,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
 
         [Column("comentario")]
         [StringLength(250)]
-        [Required]
-        public string ComentarioHuesped { get; set; }
+        public string? ComentarioHuesped { get; set; }
 
         [Column("fechaSalida")]
         [DataType(DataType.DateTime)]
@@ -26,8 +25,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
 
         [Column("calificacion")]
         [StringLength(250)]
-        [Required]
-        public string Calificacion { get; set; }
+        public string? Calificacion { get; set; }
 
         [Column("guestId")]
         public Guid GuestId { get; set; }

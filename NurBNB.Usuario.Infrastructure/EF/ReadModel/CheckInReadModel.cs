@@ -17,8 +17,7 @@ namespace NurBNB.Usuario.Infrastructure.EF.ReadModel
 
         [Column("contacto")]
         [StringLength(250)]
-        [Required]
-        public string Contacto { get; set; }
+        public string? Contacto { get; set; }
 
         [Column("fechaLlegada")]
         [DataType(DataType.DateTime)]

@@ -27,6 +27,7 @@ namespace NurBNB.Usuario.Infrastructure
             services.AddApplication();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             AddDatabase(services, configuration, isDevelopment);
+            AddMassTransitWithRabbitMQ(services, configuration);
             return services;
         }
 
@@ -43,6 +44,8 @@ namespace NurBNB.Usuario.Infrastructure
             services.AddScoped<IUsuarioRepository, UsuarioRepository>();
             services.AddScoped<IHuespedRepository, HuespedRepository>();
             services.AddScoped<IStaffRepository, StaffRepository>();
+            services.AddScoped<ICheckInRepository, CheckInRepository>();
+            services.AddScoped<ICheckOutRepository, CheckOutRepository>();
 
             using var scope = services.BuildServiceProvider().CreateScope();
             if (!isDevelopment)

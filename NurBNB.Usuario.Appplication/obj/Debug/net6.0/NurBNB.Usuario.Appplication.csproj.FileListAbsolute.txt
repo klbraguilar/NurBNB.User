@@ -13,3 +13,5 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\De
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\refint\NurBNB.Usuario.Appplication.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\ref\NurBNB.Usuario.Appplication.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb

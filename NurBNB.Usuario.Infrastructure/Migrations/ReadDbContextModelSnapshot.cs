@@ -30,7 +30,6 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
                         .HasColumnName("inId");
 
                     b.Property<string>("Contacto")
-                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
                         .HasColumnName("contacto");
@@ -62,13 +61,11 @@ namespace NurBNB.Usuario.Infrastructure.Migrations
                         .HasColumnName("outId");
 
                     b.Property<string>("Calificacion")
-                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
                         .HasColumnName("calificacion");
 
                     b.Property<string>("ComentarioHuesped")
-                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)")
                         .HasColumnName("comentario");

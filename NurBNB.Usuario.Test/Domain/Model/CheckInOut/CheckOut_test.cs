@@ -14,11 +14,12 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
         {
             // Arrange
             var guestId = Guid.NewGuid();
+            var reservaId = Guid.NewGuid();
             var calificacion = Calificacion.tres;
             var comentario = "Comentario de prueba";
 
             // Act
-            var checkOut = new CheckOut(guestId, calificacion, comentario);
+            var checkOut = new CheckOut(guestId, reservaId, calificacion, comentario);
 
             // Assert
             Assert.Equal(guestId, checkOut.GuestId);
@@ -32,11 +33,12 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
         {
             // Arrange
             var guestId = Guid.NewGuid();
+            var reservaId = Guid.NewGuid();
             var calificacion = Calificacion.cinco;
             var comentario = "Otro comentario de prueba";
 
             // Act
-            var checkOut = new CheckOut(guestId, calificacion, comentario);
+            var checkOut = new CheckOut(guestId, reservaId, calificacion, comentario);
 
             // Assert
             Assert.NotEqual(Guid.Empty, checkOut.Id);

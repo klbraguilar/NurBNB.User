@@ -88,3 +88,5 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\ne
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Text.Json.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\System.Threading.Channels.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb
