@@ -14,5 +14,6 @@ namespace NurBNB.Usuario.Appplication.UseCases.CheckInOut.Command.CrearCheckInCo
         public Guid guestId { get; set; }
         public Guid reservaId { get; set; }
         public string contacto { get; set; }
+        public DateTime fechaLlegada { get; set; }
     }
 }

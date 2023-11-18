@@ -36,7 +36,7 @@ if (app.Environment.IsDevelopment())
 }
 
 //app.UseHttpsRedirection();
-
+app.UseConsul(builder.Configuration);
 app.UseAuthorization();
 
 app.MapControllers();

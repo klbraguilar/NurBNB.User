@@ -28,7 +28,7 @@ namespace NurBNB.Usuario.Appplication.UseCases.CheckInOut.Command.CrearCheckInCo
 
         public async Task<Guid> Handle(CrearCheckInCommand request, CancellationToken cancellationToken)
         {
-            CheckIn checkInCreado = _checkInFactory.Crear(request.guestId, request.reservaId, request.contacto);
+            CheckIn checkInCreado = _checkInFactory.Crear(request.guestId, request.reservaId, request.contacto, request.fechaLlegada);
             await _checkInRepository.CreateAsync(checkInCreado);
             await _unitOfWork.Commit();
             return checkInCreado.Id;

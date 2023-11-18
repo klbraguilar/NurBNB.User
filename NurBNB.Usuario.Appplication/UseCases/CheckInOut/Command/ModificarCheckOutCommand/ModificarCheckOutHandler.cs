@@ -1,4 +1,6 @@
 ﻿using MediatR;
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+using Microsoft.Extensions.Primitives;
 using NurBNB.Usuario.Appplication.Services;
 using NurBNB.Usuario.Domain.Factories;
 using NurBNB.Usuario.Domain.Model.CheckInOut;
@@ -26,15 +28,21 @@ namespace NurBNB.Usuario.Appplication.UseCases.CheckInOut.Command.ModificarCheck
         public async Task<Guid> Handle(ModificarCheckOutCommand request, CancellationToken cancellationToken)
         {
             CheckOut recordToUpdate = await _checkOutRepository.FindByIdAsync(request.Id);
+            Calificacion VariableName = (Calificacion)Enum.Parse(typeof(Calificacion), request.calificacion);
             if (recordToUpdate == null)
             {
                 return default;
             }
             else
             {
-                recordToUpdate.GetType().GetProperty("ComentarioHuesped").SetValue(recordToUpdate, request.comentario, null);
+                recordToUpdate.Editar(recordToUpdate.Id,
+                    recordToUpdate.GuestId,
+                    recordToUpdate.ReservaId,
+                    VariableName,
+                    recordToUpdate.FechaSalida,
+                    request.comentario);
                 await _checkOutRepository.UpdateAsync(recordToUpdate);
-                _unitOfWork.Commit();
+                await _unitOfWork.Commit();
                 return recordToUpdate.Id;
             }
         }

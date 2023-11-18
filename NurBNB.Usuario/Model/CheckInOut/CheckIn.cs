@@ -14,13 +14,13 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
         public string Contacto{ get; private set; }
         public DateTime FechaLlegada { get; private set; }
 
-        public CheckIn(Guid guestId, Guid reservaId, string contacto)
+        public CheckIn(Guid guestId, Guid reservaId, string contacto, DateTime fechaLlegada)
         {
             Id = Guid.NewGuid();
             GuestId = guestId;
             ReservaId= reservaId;
             Contacto = contacto;
-            FechaLlegada = DateTime.Now;
+            FechaLlegada = fechaLlegada;
         }
 
         public CheckIn()

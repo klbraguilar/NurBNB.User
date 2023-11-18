@@ -30,15 +30,32 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
         public static CheckOut Create(Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
         {
             var obj =  new CheckOut(guestId, reservaId, calificacion, fechaSalida, comentario);
-            obj.AddDomainEvent(new CheckOutRealizado(
-                obj.Id,
-                obj.GuestId,
-                obj.ReservaId,
-                obj.Calificacion,
-                obj.FechaSalida,
-                obj.ComentarioHuesped));
             return obj;
         }
+
+        public void Editar(Guid id, Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
+        {
+            Id = id;
+            GuestId = guestId;
+            ReservaId = reservaId;
+            Calificacion = calificacion;
+            FechaSalida = fechaSalida;
+            ComentarioHuesped = comentario;
+            AddDomainEvent(new CheckOutRealizado(Id, GuestId, ReservaId, Calificacion, FechaSalida, ComentarioHuesped));
+        }
+
+        //public static CheckOut Update(Guid id, Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
+        //{
+        //    obj.Editar(id, guestId, reservaId, calificacion, fechaSalida, comentario);
+        //    AddDomainEvent(new CheckOutRealizado(
+        //        obj.Id,
+        //        obj.GuestId,
+        //        obj.ReservaId,
+        //        obj.Calificacion,
+        //        obj.FechaSalida,
+        //        obj.ComentarioHuesped));
+        //    return obj;
+        //}
 
         public CheckOut()
         {

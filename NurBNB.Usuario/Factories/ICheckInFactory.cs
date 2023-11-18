@@ -9,6 +9,6 @@ namespace NurBNB.Usuario.Domain.Factories
 {
     public interface ICheckInFactory
     {
-        CheckIn Crear(Guid guestId, Guid reservaId, string contacto);
+        CheckIn Crear(Guid guestId, Guid reservaId, string contacto, DateTime fechaLlegada);
     }
 }

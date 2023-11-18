@@ -1,14 +1,21 @@
-﻿using MassTransit;
+﻿using Consul;
+using MassTransit;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using NurBNB.Usuario.Appplication;
 using NurBNB.Usuario.Appplication.Services;
 using NurBNB.Usuario.Domain.Repositories;
+using NurBNB.Usuario.Infrastructure.Consul;
 using NurBNB.Usuario.Infrastructure.EF;
 using NurBNB.Usuario.Infrastructure.EF.Contexts;
 using NurBNB.Usuario.Infrastructure.EF.Repositories;
 using NurBNB.Usuario.Infrastructure.MassTransit;
+using NurBNB.Usuario.Infrastructure.MassTransit.Consumers;
+using NURBNB.IntegrationEvents;
 using Restaurant.SharedKernel.Core;
 using System;
 using System.Collections.Generic;
@@ -27,6 +34,7 @@ namespace NurBNB.Usuario.Infrastructure
             services.AddApplication();
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(Assembly.GetExecutingAssembly()));
             AddDatabase(services, configuration, isDevelopment);
+            services.AddConsulConfig(configuration);
             AddMassTransitWithRabbitMQ(services, configuration);
             return services;
         }
@@ -63,7 +71,7 @@ namespace NurBNB.Usuario.Infrastructure
 
             services.AddMassTransit(configure =>
             {
-
+                configure.AddConsumer<ReservaRegistradaConsumer>();
                 configure.UsingRabbitMq((context, configurator) =>
                 {
 
@@ -76,6 +84,48 @@ namespace NurBNB.Usuario.Infrastructure
                 });
             });
             return services;
+        }
+        public static IServiceCollection AddConsulConfig(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddSingleton<IConsulClient, ConsulClient>(p => new ConsulClient(consulConfig =>
+            {
+                var configSettings = configuration.GetSection(nameof(ConfigurationSetting)).Get<ConfigurationSetting>();
+                var address = configSettings.ConsulAddresss;
+                consulConfig.Address = new Uri(address);
+            }));
+            return services;
+        }
+
+        public static IApplicationBuilder UseConsul(this IApplicationBuilder app, IConfiguration configuration)
+        {
+            var consulClient = app.ApplicationServices.GetRequiredService<IConsulClient>();
+            var logger = app.ApplicationServices.GetRequiredService<ILoggerFactory>().CreateLogger("AppExtensions");
+            var lifetime = app.ApplicationServices.GetRequiredService<IApplicationLifetime>();
+
+            //var uri = new Uri(address);
+            var configSettings = configuration.GetSection(nameof(ConfigurationSetting)).Get<ConfigurationSetting>();
+            var serviceName = configSettings.ServiceName;
+            var serviceHost = configSettings.ServiceHost;
+            var servicePort = configSettings.ServicePort;
+            var registration = new AgentServiceRegistration()
+            {
+                ID = serviceName, //{uri.Port}",
+                // servie name  
+                Name = serviceName,
+                Address = serviceHost, //$"{uri.Host}",
+                Port = servicePort  // uri.Port
+            };
+
+            logger.LogInformation("Registering with Consul");
+            consulClient.Agent.ServiceDeregister(registration.ID).ConfigureAwait(true);
+            consulClient.Agent.ServiceRegister(registration).ConfigureAwait(true);
+
+            lifetime.ApplicationStopping.Register(() =>
+            {
+                logger.LogInformation("Unregistering from Consul");
+            });
+
+            return app;
         }
     }
 }

@@ -11,9 +11,9 @@ namespace NurBNB.Usuario.Domain.Factories
 {
     public class CheckInFactory : ICheckInFactory
     {
-        public CheckIn Crear(Guid guestId, Guid reservaId, string contacto)
+        public CheckIn Crear(Guid guestId, Guid reservaId, string contacto, DateTime fechaLlegada)
         {
-            return new CheckIn(guestId, reservaId, contacto);
+            return new CheckIn(guestId, reservaId, contacto, fechaLlegada);
         }
     }
 }
