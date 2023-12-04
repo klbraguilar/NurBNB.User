@@ -31,7 +31,7 @@ namespace NurBNB.Usuario.Test.Application.UseCases.Usuario.Command
             public async Task Handle_ValidRequest_ReturnsHuespedId()
             {
                 // Arrange
-                var usuarioId = Guid.NewGuid(); 
+                var usuarioId = Guid.NewGuid();
                 var request = new CrearHuespedCommand
                 {
                     Name = "GuestT",

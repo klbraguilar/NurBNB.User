@@ -48,15 +48,8 @@ namespace NurBNB.Usuario.Infrastructure.EF
             {
                 await _mediator.Publish(evento);
             }
+            await _context.SaveChangesAsync();
 
-            if (_transactionCounter == 1)
-            {
-                await _context.SaveChangesAsync();
-            }
-            else
-            {
-                _transactionCounter--;
-            }
         }
 
     }

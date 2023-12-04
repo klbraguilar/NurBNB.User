@@ -35,7 +35,7 @@ namespace NurBNB.Usuario.Appplication.UseCases.CheckInOut.Command.ModificarCheck
                 recordToUpdate.GetType().GetProperty("Contacto").SetValue(recordToUpdate, request.contacto, null);
                 await _checkInRepository.UpdateAsync(recordToUpdate);
                 _unitOfWork.Commit();
-                return  recordToUpdate.Id;
+                return recordToUpdate.Id;
             }
 
         }

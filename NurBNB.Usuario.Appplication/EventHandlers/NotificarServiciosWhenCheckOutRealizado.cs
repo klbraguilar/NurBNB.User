@@ -24,7 +24,7 @@ namespace NurBNB.Usuario.Appplication.EventHandlers
             CheckOutFinalizado checkOutFinalizado = new CheckOutFinalizado()
             {
                 GuestId = notification.GuestId,
-                ReservaId= notification.ReservaId,
+                ReservaId = notification.ReservaId,
                 ComentarioHuesped = notification.ComentarioHuesped,
                 FechaSalida = notification.FechaSalida,
                 Calificacion = notification.Calificacion.ToString(),

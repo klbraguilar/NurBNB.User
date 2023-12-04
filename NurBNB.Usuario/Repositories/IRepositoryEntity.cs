@@ -8,5 +8,5 @@ public interface IRepositoryEntity<T, in TId> where T : Entity
     Task<T?> FindByIdAsync(TId id);
 
     Task CreateAsync(T obj);
-    
+
 }

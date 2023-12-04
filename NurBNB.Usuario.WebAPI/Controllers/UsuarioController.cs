@@ -20,7 +20,7 @@ namespace NurBNB.Usuario.WebAPI.Controllers
 
         [HttpPost]
         public async Task<IActionResult> CreateUser([FromBody] CrearUsuarioCommand usuarioCommand)
-        { 
+        {
             var userId = await _mediator.Send(usuarioCommand);
             return Ok(userId);
         }
@@ -29,8 +29,8 @@ namespace NurBNB.Usuario.WebAPI.Controllers
         public async Task<IActionResult> searchUsers(string searchTerm = "")
         {
             var users = await _mediator.Send(new GetUserListQuery()
-            { 
-                SearchTerm= searchTerm
+            {
+                SearchTerm = searchTerm
             });
             return Ok(users);
         }

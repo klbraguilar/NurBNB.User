@@ -21,15 +21,15 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
         {
             Id = new Guid();
             GuestId = guestId;
-            ReservaId= reservaId;
-            Calificacion= calificacion;
+            ReservaId = reservaId;
+            Calificacion = calificacion;
             FechaSalida = fechaSalida;
-            ComentarioHuesped= comentario;
+            ComentarioHuesped = comentario;
         }
 
         public static CheckOut Create(Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
         {
-            var obj =  new CheckOut(guestId, reservaId, calificacion, fechaSalida, comentario);
+            var obj = new CheckOut(guestId, reservaId, calificacion, fechaSalida, comentario);
             return obj;
         }
 

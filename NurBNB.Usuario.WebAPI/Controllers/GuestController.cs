@@ -23,8 +23,8 @@ namespace NurBNB.Usuario.WebAPI.Controllers
         {
             CrearUsuarioCommand usuario = new CrearUsuarioCommand();
             usuario.UserName = huespedCommand.user.UserName;
-            usuario.Password= huespedCommand.user.Password;
-            usuario.Email= huespedCommand.user.Email;
+            usuario.Password = huespedCommand.user.Password;
+            usuario.Email = huespedCommand.user.Email;
             var userId = await _mediator.Send(usuario);
             huespedCommand.usuarioId = userId;
             var guestID = await _mediator.Send(huespedCommand);

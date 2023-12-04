@@ -41,6 +41,7 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             Assert.NotEqual(Guid.Empty, checkIn.Id);
         }
 
+        [Fact]
         public void CheckIn_Equals_SameValuesAreEqual()
         {
             // Arrange

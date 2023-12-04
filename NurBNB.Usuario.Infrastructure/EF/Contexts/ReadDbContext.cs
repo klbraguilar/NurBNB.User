@@ -32,7 +32,7 @@ public class ReadDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        
-        
+
+
     }
 }

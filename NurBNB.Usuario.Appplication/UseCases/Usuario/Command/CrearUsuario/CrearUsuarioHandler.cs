@@ -17,7 +17,7 @@ namespace NurBNB.Usuario.Appplication.UseCases.Usuario.Command.CrearUsuario
         private IUsuarioFactory _usuarioFactory;
         private readonly IUnitOfWork _unitOfWork;
 
-        public CrearUsuarioHandler(IUsuarioRepository usuarioRepository, 
+        public CrearUsuarioHandler(IUsuarioRepository usuarioRepository,
             IUsuarioFactory usuarioFactory, IUnitOfWork unitOfWork)
         {
             _usuarioRepository = usuarioRepository;

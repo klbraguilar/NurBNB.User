@@ -29,7 +29,7 @@ namespace NurBNB.Usuario.Test.Domain.Model.Users
         public void Email_CreationWithNullOrEmptyValue_ThrowsException()
         {
             // Act & Assert
-            Assert.Throws <BussinessRuleValidationException>(() => new Email(null)); // Ajusta la excepción según tu implementación
+            Assert.Throws<BussinessRuleValidationException>(() => new Email(null)); // Ajusta la excepción según tu implementación
             Assert.Throws<BussinessRuleValidationException>(() => new Email("")); // Ajusta la excepción según tu implementación
         }
 
