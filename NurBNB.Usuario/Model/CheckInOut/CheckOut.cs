@@ -17,7 +17,7 @@ namespace NurBNB.Usuario.Domain.Model.CheckInOut
         public DateTime FechaSalida { get; private set; }
         public Calificacion Calificacion { get; private set; }
 
-        internal CheckOut(Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
+        public CheckOut(Guid guestId, Guid reservaId, Calificacion calificacion, DateTime fechaSalida, String comentario)
         {
             Id = new Guid();
             GuestId = guestId;

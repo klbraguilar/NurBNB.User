@@ -126,3 +126,5 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\obj\Debug\net6
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\obj\Debug\net6.0\NurBNB.Usuario.Test.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\obj\Debug\net6.0\NurBNB.Usuario.Test.genruntimeconfig.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\obj\Debug\net6.0\ref\NurBNB.Usuario.Test.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Test\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb
