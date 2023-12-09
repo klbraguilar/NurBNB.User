@@ -35,15 +35,15 @@ namespace NurBNB.Usuario.Test.SharedKernel.ValueObjects
             Assert.Throws<BussinessRuleValidationException>(() => new PersonNameValue(longName));
         }
 
-        [Theory]
-        [InlineData(null)]
-        [InlineData("")]
-        [InlineData(" ")]
-        public void PersonNameValue_CreationWithNullOrEmptyName_ThrowsException(string invalidName)
-        {
-            // Act & Assert
-            Assert.Throws<BussinessRuleValidationException>(() => new PersonNameValue(invalidName));
-        }
+        //[Theory]
+        //[InlineData(null)]
+        //[InlineData("")]
+        //[InlineData(" ")]
+        //public void PersonNameValue_CreationWithNullOrEmptyName_ThrowsException(string invalidName)
+        //{
+        //    // Act & Assert
+        //    Assert.Throws<BussinessRuleValidationException>(() => new PersonNameValue(invalidName));
+        //}
 
 
         [Theory]

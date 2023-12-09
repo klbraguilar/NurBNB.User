@@ -2,9 +2,11 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Infrastructure.runtimeconfig.json
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Infrastructure.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Infrastructure.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Appplication.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Domain.dll
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Appplication.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NurBNB.Usuario.Domain.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\Debug\net6.0\NurBNB.Usuario.Infrastructure.csproj.AssemblyReference.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\Debug\net6.0\NurBNB.Usuario.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
@@ -17,5 +19,3 @@ C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\Debug\net6.0\NurBNB.Usuario.Infrastructure.pdb
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\Debug\net6.0\NurBNB.Usuario.Infrastructure.genruntimeconfig.cache
 C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\obj\Debug\net6.0\ref\NurBNB.Usuario.Infrastructure.dll
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Infrastructure\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb
