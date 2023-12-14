@@ -1,0 +1,19 @@
+FROM mcr.microsoft.com/dotnet/aspnet:6.0 AS base
+WORKDIR /app
+EXPOSE 80
+
+FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
+WORKDIR /src
+COPY ["NurBNB.Usuario.WebAPI/NurBNB.Usuario.WebAPI.csproj", "NurBNB.Usuario.WebAPI/"]
+RUN dotnet restore "NurBNB.Usuario.WebAPI/NurBNB.Usuario.WebAPI.csproj"
+COPY . .
+WORKDIR "/src/NurBNB.Usuario.WebAPI"
+RUN dotnet build "NurBNB.Usuario.WebAPI.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "NurBNB.Usuario.WebAPI.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "NurBNB.Usuario.WebAPI.dll"]
