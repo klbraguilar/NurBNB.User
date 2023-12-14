@@ -1,7 +1,0 @@
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.csproj.AssemblyReference.cache
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.AssemblyInfoInputs.cache
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.AssemblyInfo.cs
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.csproj.CoreCompileInputs.cache
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.WebAPI\obj\Debug\net6.0\NurBNB.Usuario.WebAPI.MvcApplicationPartsAssemblyInfo.cache
