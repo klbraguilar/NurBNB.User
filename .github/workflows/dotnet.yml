@@ -15,14 +15,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - name: Checkout repository
+      uses: actions/checkout@v3
+      with: 
+        repository: klbraguilar/NurBNB.User
+        ref: master
+        path: NurBNB.User
+
+    - name: Checkout IntegrationEvents
+      uses: actions/checkout@v3
+      with:
+        repository: klbraguilar/NurBNB.IntegrationEvents
+        ref: master
+        path: NurBNB.User/NURBNB.IntegrationEvents
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
+
     - name: Restore dependencies
       run: dotnet restore
+
     - name: Build
       run: dotnet build --no-restore
+
     - name: Test
       run: dotnet test --no-build --verbosity normal
