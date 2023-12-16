@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Clone NURBNB.IntegrationEvents
-      run: git clone https://github.com/LuismendozaSalv/NURBNB.IntegrationEvents.git ./NURBNB.IntegrationEvents
-      token: ${{ secrets.PAT }}
-      
+      with: 
+        repository: LuismendozaSalv/NURBNB.IntegrationEvents
+        ref: master
+        path: NURBNB.IntegrationEvents
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
       with:
