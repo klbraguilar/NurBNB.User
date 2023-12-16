@@ -22,7 +22,7 @@ jobs:
       with: 
         repository: klbraguilar/NurBNB.IntegrationEvents
         ref: master
-        path: NURBNB.IntegrationEvents
+        path: Integrations/NURBNB.IntegrationEvents
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
