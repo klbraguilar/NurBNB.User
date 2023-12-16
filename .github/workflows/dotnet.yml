@@ -15,15 +15,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
 
     - name: Checkout IntegrationEvents
-      uses: actions/checkout@v3
+    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4.1.1
       with:
         repository: klbraguilar/NurBNB.IntegrationEvents
         ref: master
-        path: NurBNB.Usuario/NURBNB.IntegrationEvents
+        path: NURBNB.IntegrationEvents
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
