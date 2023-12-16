@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Integrations\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj" />
     <ProjectReference Include="..\NurBNB.Usuario\NurBNB.Usuario.Domain.csproj" />
   </ItemGroup>
 
