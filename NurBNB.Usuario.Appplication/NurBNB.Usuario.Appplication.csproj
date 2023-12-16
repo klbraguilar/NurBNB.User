@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\..\Integrations\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj" />
     <ProjectReference Include="..\NurBNB.Usuario\NurBNB.Usuario.Domain.csproj" />
   </ItemGroup>
 
