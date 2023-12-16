@@ -15,11 +15,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-
-    - name: Checkout IntegrationEvents
-      uses: actions/checkout@v3
-      
-      with:
+    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4.1.1
+      with: 
         repository: klbraguilar/NurBNB.IntegrationEvents
         ref: master
         path: NURBNB.IntegrationEvents
