@@ -17,10 +17,6 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-      with: 
-        repository: klbraguilar/NurBNB.User
-        ref: master
-        path: NurBNB.User
 
     - name: Checkout IntegrationEvents
       uses: actions/checkout@v3
