@@ -1,0 +1,17 @@
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NurBNB.Usuario.Appplication.deps.json
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NurBNB.Usuario.Appplication.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NurBNB.Usuario.Appplication.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NURBNB.IntegrationEvents.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NurBNB.Usuario.Domain.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NURBNB.IntegrationEvents.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\bin\Debug\net6.0\NurBNB.Usuario.Domain.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.csproj.AssemblyReference.cache
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.AssemblyInfoInputs.cache
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.AssemblyInfo.cs
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.csproj.CoreCompileInputs.cache
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.csproj.CopyComplete
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\refint\NurBNB.Usuario.Appplication.dll
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\NurBNB.Usuario.Appplication.pdb
+C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\obj\Debug\net6.0\ref\NurBNB.Usuario.Appplication.dll

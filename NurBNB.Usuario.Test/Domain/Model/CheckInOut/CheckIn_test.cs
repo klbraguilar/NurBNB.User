@@ -17,6 +17,7 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             var contacto = "John Doe";
             var reservaId = Guid.NewGuid();
             var fecha = DateTime.Now;
+
             // Act
             var checkIn = new CheckIn(guestId, reservaId, contacto, fecha);
 
@@ -50,7 +51,6 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
         //    string contacto = "Contacto válido";
         //    var reservaId = Guid.NewGuid();
         //    var fecha = DateTime.Now;
-
         //    // Act
         //    var checkIn1 = new CheckIn(guestId, reservaId, contacto, fecha);
         //    var checkIn2 = new CheckIn(guestId, reservaId, contacto, fecha);
