@@ -16,8 +16,9 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
             var guestId = Guid.NewGuid();
             var reservaId = Guid.NewGuid();
             var calificacion = Calificacion.tres;
-            var comentario = "Comentario de prueba";
             var fecha = DateTime.Now;
+            var comentario = "Comentario de prueba";
+
             // Act
             var checkOut = new CheckOut(guestId, reservaId, calificacion, fecha, comentario);
 
@@ -37,8 +38,9 @@ namespace NurBNB.Usuario.Test.Domain.Model.CheckInOut
         //    var calificacion = Calificacion.cinco;
         //    var comentario = "Otro comentario de prueba";
         //    var fecha = DateTime.Now;
+
         //    // Act
-        //    var checkOut = new CheckOut(guestId, reservaId, calificacion,fecha, comentario);
+        //    var checkOut = new CheckOut(guestId, reservaId, calificacion, fecha, comentario);
 
         //    // Assert
         //    Assert.NotEqual(Guid.Empty, checkOut.Id);

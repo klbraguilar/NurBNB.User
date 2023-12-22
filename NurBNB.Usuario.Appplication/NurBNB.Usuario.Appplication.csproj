@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -18,6 +18,14 @@
 
   <ItemGroup>
     <Folder Include="UseCases\CheckInOut\Query\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\k-a37\source\repos\NurBNB.UsuarioApp\NurBNB.Usuario.Appplication\.editorconfig" />
   </ItemGroup>
 
 </Project>
