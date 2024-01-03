@@ -37,7 +37,7 @@ jobs:
         dotnet-version: 6.0.x
 
     - name: Restore dependencies
-      run: dotnet restore NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
+      run: dotnet restore 
 
     - name: Build
       run: dotnet build --no-restore NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
