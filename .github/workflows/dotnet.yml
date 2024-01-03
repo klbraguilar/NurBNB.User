@@ -40,10 +40,10 @@ jobs:
       run: dotnet restore 
 
     - name: Build
-      run: dotnet build --no-restore NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
+      run: dotnet build --no-restore 
 
     - name: Test
-      run: dotnet test --no-build --verbosity normal NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
+      run: dotnet test --no-build --verbosity normal 
       
     - name: Cache SonarCloud packages
       uses: actions/cache@v3
