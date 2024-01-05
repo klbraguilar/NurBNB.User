@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj" />
+    <ProjectReference Include="..\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj" />
     <ProjectReference Include="..\NurBNB.Usuario\NurBNB.Usuario.Domain.csproj" />
   </ItemGroup>
 

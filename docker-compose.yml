@@ -12,3 +12,5 @@ services:
     container_name: web_api_usuario
     ports:
       - "8001:80"
+    depends_on:
+      - sql
