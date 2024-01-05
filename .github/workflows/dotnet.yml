@@ -101,6 +101,6 @@ jobs:
       - name: Do deploy
         run: ssh staging 'cd /app/ && bash deploy.sh'
         
-      - name: Start the server
-        if: ${{ always() }}
-        run: ssh staging 'sudo systemctl start pedidos.service'
+      #- name: Start the server
+       # if: ${{ always() }}
+        #run: ssh staging 'sudo systemctl start pedidos.service'
