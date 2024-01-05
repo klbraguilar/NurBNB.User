@@ -5,9 +5,9 @@ name: .NET
 
 on:
   push:
-    branches: [ "develop" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "develop" ]
+    branches: [ "master" ]
 
 jobs:
   build:
@@ -69,5 +69,5 @@ jobs:
         .\.sonar\scanner\dotnet-sonarscanner begin /k:"klbraguilar_NurBNB.User" /o:"klbraguilar" /d:sonar.token="${{ secrets.SONAR_TOKEN }}" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.vscoveragexml.reportsPaths=coverage.xml
         dotnet build --no-restore NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
         dotnet test --no-build --verbosity normal NURBNB.IntegrationEvents/NURBNB.IntegrationEvents/NURBNB.IntegrationEvents.csproj
-        dotnet-coverage collect 'dotnet test SharedKernel.test' -f xml  -o 'coverage.xml'
+        dotnet-coverage collect 'dotnet test NURBNB.Usuario.Test' -f xml  -o 'coverage.xml'
         .\.sonar\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
