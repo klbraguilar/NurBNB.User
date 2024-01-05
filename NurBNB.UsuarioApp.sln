@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.WebAPI", "Nu
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NurBNB.Usuario.Test", "NurBNB.Usuario.Test\NurBNB.Usuario.Test.csproj", "{57034402-12B1-40A0-AE73-F422D4A15233}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NURBNB.IntegrationEvents", "..\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj", "{E099431C-9D0C-4BBB-A0F8-992C877D4A43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NURBNB.IntegrationEvents", "NURBNB.IntegrationEvents\NURBNB.IntegrationEvents\NURBNB.IntegrationEvents.csproj", "{2169BB70-15EF-4753-B17A-22C769C497E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,10 +41,10 @@ Global
 		{57034402-12B1-40A0-AE73-F422D4A15233}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57034402-12B1-40A0-AE73-F422D4A15233}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57034402-12B1-40A0-AE73-F422D4A15233}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E099431C-9D0C-4BBB-A0F8-992C877D4A43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E099431C-9D0C-4BBB-A0F8-992C877D4A43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E099431C-9D0C-4BBB-A0F8-992C877D4A43}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E099431C-9D0C-4BBB-A0F8-992C877D4A43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2169BB70-15EF-4753-B17A-22C769C497E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2169BB70-15EF-4753-B17A-22C769C497E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2169BB70-15EF-4753-B17A-22C769C497E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2169BB70-15EF-4753-B17A-22C769C497E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
